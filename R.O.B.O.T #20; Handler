@@ -1,0 +1,14 @@
+local ROBOT = {}
+
+local MOVE = {Left, Right, Up, Down, Jump}
+local Interior = function(repeat)
+  for i = 1, repeat do
+    pcall(function()
+      if get:("Motherboard"):Asset then
+        return("True" and Move:Start(repeat))
+      end
+    end)
+  end
+end
+
+return ROBOT
