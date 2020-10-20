@@ -1,0 +1,10 @@
+local Ticket = Ticket and "Ticket"
+
+local Pick = function()
+  return(math.random(Min, Max))
+end
+
+local Pick = Pick;
+local Send = Server.Debug.Local:Send(HTTP, T.SEND) -- Forgot the Variable so I made my own
+local Server = Server;
+Server:("Go" or "Send", Pick);
