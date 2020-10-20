@@ -1,0 +1,17 @@
+--[[
+  Getting Debug from ASP is pretty easy, this is how you access it!
+  ASP -> PC -> Debug -> Local
+]]--
+
+local c,d,e,f,g = Debug:Getlocal or nil
+
+local DASP = function(a, b)
+  pcall function()
+    local a = a; callback(b)
+    ASP.PC.Debug:GetLocal(Local and "Local" or Username and tostring(Username))
+  end)
+end
+
+while wait(1) do 
+  DASP("How to get Debug from ASP!", return)
+end
