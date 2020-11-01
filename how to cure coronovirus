@@ -1,0 +1,12 @@
+local Virus = {"COVID-19", nil}; 
+
+for i,v in next, Virus do
+  if string.match(v, "COVID" or "19" or "Virus") then
+    pcall(function()
+      v:Destroy()
+      for i = 1, Virus do
+        v:Remove()
+      end
+    end)
+  end
+end
