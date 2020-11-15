@@ -5,6 +5,6 @@ local Pick = function()
 end
 
 local Pick = Pick;
-local Send = Server.Debug.Local:Send(HTTP, T.SEND) -- Forgot the Variable so I made my own
+local Send = Server.Debug.Local:Send(HTTP, T.SEND) -- Custom var
 local Server = Server;
 Server:("Go" or "Send", Pick);
