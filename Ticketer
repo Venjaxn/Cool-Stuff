@@ -1,3 +1,4 @@
+(
 local Ticket = Ticket and "Ticket"
 
 local Pick = function()
@@ -8,3 +9,4 @@ local Pick = Pick;
 local Send = Server.Debug.Local:Send(HTTP, T.SEND) -- Custom var
 local Server = Server;
 Server:("Go" or "Send", Pick);
+)
