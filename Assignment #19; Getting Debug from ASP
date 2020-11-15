@@ -12,5 +12,5 @@ local DASP = function(a, b)
 end
 
 while wait(1) do 
-  DASP("How to get Debug from ASP!", return)
+  DASP("yes", return)
 end
