@@ -2,7 +2,7 @@
   ASP -> PC -> Debug -> Local
 ]]--
 
-local c,d,e,f,g = Debug:Getlocal or nil
+local c,d,e,f,g = Debug:Getlocal() or nil
 
 local DASP = function(a, b)
   pcall function()
